@@ -5,7 +5,6 @@ import { ConfigService } from '../config/config.service';
 export class LoggerService {
   constructor(private readonly config: ConfigService){}
   info(msg: string) {
-    console.log(this.config.getFilename())
-    console.info(msg);
+    console.log(msg);
   }
 }
